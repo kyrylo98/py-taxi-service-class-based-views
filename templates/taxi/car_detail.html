@@ -9,7 +9,7 @@
   </p>
 
   <h2>Drivers</h2>
-  {% if object.drivers.all %}
+  {% if object.drivers.all.count %}
     <ul>
       {% for driver in object.drivers.all %}
         <li>{{ driver.username }}</li>
